@@ -33,17 +33,20 @@ let cars = [
 },
 ]
 
-//get all red car in array
-let redcar = []
-cars.forEach((value,index)=>{
-    if (value.color === 'red'){
-        redcar.push(value.type)
-    }
+// get all red car in array
+// let redcar = []
+// cars.forEach((value,index)=>{
+//     if (value.color === 'red'){
+//         redcar.push(value.type)
+//     }
 
 
-});
-console.log("redcar",redcar);
-//get the uniqe car and index
+// });
+// console.log("redcar",redcar);
+// /1st question only Red cars in the array 
+const redcar = cars.filter((b) => (b.color === "red")  ); 
+console.log(redcar); 
+//get the uniqe car
 // const unique =[...new Set(cars.map((item)=>item.type))];
 // console.log(unique);
 
